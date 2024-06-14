@@ -3,3 +3,4 @@ requests==2.27.1
 flake8==4.0.1
 jenkinsapi==0.3.8  # Add this line
 sanic_routing==0.7.0  # Add this line
+sanic_testing==0.7.0  # Add this line
