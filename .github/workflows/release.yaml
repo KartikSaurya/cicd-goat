@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - '**/feature/**'  # Optional: Include other branches if necessary
+      - '**/feature/**'
 
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'  # Specify the Python version you are using
+          python-version: '3.9'
 
       - name: Install dependencies
         run: |
@@ -27,3 +27,7 @@ jobs:
       - name: Run tests
         run: |
           pytest
+
+      - name: Lint code
+        run: |
+          flake8 .
