@@ -5,7 +5,11 @@ on:
     branches:
       - main
       - '**/feature/**'  # Optional: Include other branches if necessary
-
+  pull_request:
+    branches:
+      - main
+      - '**/feature/**'  # Include other branches as needed
+      
 jobs:
   example-job:
     name: Example Job
